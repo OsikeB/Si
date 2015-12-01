@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Si">
 <head>
   <meta charset="UTF-8">
   <!-- Latest compiled and minified CSS -->
@@ -9,113 +9,35 @@
   <title>Si!</title>
 </head>
 <body>
-  <body>
 
-<div id="top" class="top">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-               <div class="navbar-header">
-                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                       <span class="sr-only">Toggle navigation</span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                   </button>
-               <a class="navbar-brand" href="#home">Si</a>
-               </div>
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-           <li><a data-scroll="" href="#home">Hello</a></li>
-           <li><a data-scroll="" href="#about">About</a></li>
-           <li><a data-scroll="" href="#projects">Projects</a></li>
-           <li><a data-scroll="" href="#contact">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-</div>
-  </nav>
-
-  <div class="fluid-container">
-    <div class="row">
-      <div class="col-xs-12">
-         <div class="header">
-            <!-- <img src="app/images/suits.jpg" alt=""> -->
-            <img src="http://modeandfashions.info/wp-content/uploads/2015/03/Fashion-for-Men.jpg" alt="">
-           <div id="header-text">
-              <h1>Sí</h1>
-              <hr>
-             <button class="btn">
-             <a href="#">
-               SHOP NOW
-             </a>
-           </button>
-           </div>
-           </div>
-        </div>
-        </div>
-   </div>
-
-<div id="gallery">
-  <div class="row">
-  <div class="col-ts-12 col-xs-6 col-sm-6">
-    <div id="pic-one">
-      <img src="http://share-us.longchamp.com/sites/share/files/catalog/15H/1610770504/0/700/product_search_tablet/longchamp_backpack_longchamp_3d_1610770504_0.png" alt="">
-  </div>
+    <div id="top" class="top">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                       </button>
+                   <a class="navbar-brand" href="#home">Si</a>
+                   </div>
+                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+               <li><a ui-sref="home">Home</a></li>
+               <li><a ui-sref="shop">Shop</a></li>
+               <li><a ui-sref="contact">Contact</a></li>
+            </ul>
     </div>
-    <div class="col-ts-12 col-xs-6 col-sm-6">
-    <div id="pic-two">
-      <img src="http://cdn.shopify.com/s/files/1/0377/2037/products/Rose-Gold-Brown-Leather-V2_large.jpg?v=1446487164" alt="">
-  </div>
-    </div>
-  </div>
-    </div>
-
-    <div id="white-bar">
-      <p>FREE DELIVERY ON ALL PRODUCTS WHEN YOU SPEND OVER £75!</p>
-    </div>
-
-    <div id="gallery2">
-      <div class="row">
-      <div class="col-ts-12 col-xs-6 col-sm-2">
-        <div class="pictures">
-          <img src="" alt="">
-        </div>
-        </div>
-
-        <div class="col-ts-12 col-xs-6 col-sm-2">
-        <div class="pictures" id='white'>
-          <img src="http://www.fashioneyewear.co.uk/blog/wp-content/uploads/2013/07/rayban-rb3475q-matte-silver-crystal-sky-blue-1.png" alt="">
-          </div>
-          </div>
-
-          <div class="col-ts-12 col-xs-3 col-sm-2">
-        <div class="pictures">
-              <img src="http://share-us.longchamp.com/sites/share/files/catalog/15H/1610770504/0/700/product_search_tablet/longchamp_backpack_longchamp_3d_1610770504_0.png" alt="">
-            </div>
-            </div>
-
-        <div class=" col-ts-12 col-xs-9 col-sm-6">
-       <div class="pictures" id='white'>
-              <img src="https://clichefashionsense.files.wordpress.com/2013/08/0000000158248.jpeg" alt="">
-        </div>
-        </div>
-      </div>
-    </div>
-
-</div>
+      </nav>
 </body>
-    <!-- <div class="fluid-container">
-          <img id="landing-picture"
-          src="images/goldg.jpg" alt="" />
-          <div class="row">
-            <div class="col-xs-offset-5 col-xs-6">
-              <button id="buy" class="btn">SHOP NOW</button>
-            </div>
-          </div>
-      </div> -->
 
+<div ui-view></div>
 
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="app/app.js"></script>
 </body>
 </html>

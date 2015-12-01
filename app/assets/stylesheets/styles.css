@@ -3,7 +3,7 @@ body {
   color: grey; }
 
 .navbar-default {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   border-color: transparent; }
   .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: white; }
@@ -37,21 +37,19 @@ body {
     height: auto; }
   .header #header-text {
     position: relative;
-    top: -200px; }
-    .header #header-text hr {
-      width: 20%;
-      border: 1px solid grey; }
+    top: -180px;
+    left: 20px;
+    font-size: 1.2em; }
     .header #header-text h1 {
-      font-size: 2.5em;
-      color: grey;
-      top: 20px;
+      font-size: 2.9em;
+      right: 100px;
       position: relative;
       padding: 0;
       margin: 0; }
     .header #header-text button {
       position: relative;
       top: 50px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.2);
       border: 1px solid white;
       margin: 0 auto;
       width: 120px;
@@ -66,14 +64,8 @@ body {
       width: 150px;
       transition: width 1s; }
 
-@media (max-width: 400px) {
-  .btn {
-    position: absolute;
-    top: 120px; } }
-
-@media (max-width: 390px) {
-  #header-text h1 {
-    top: -100px; } }
+.nav-text {
+  margin-top: 60px; }
 
 #gallery {
   width: 100%; }
@@ -126,7 +118,7 @@ img {
   display: inline-block;
   max-width: 100%; }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .col-ts-12 {
     float: none;
     width: 100%; } }
